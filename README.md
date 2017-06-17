@@ -1,9 +1,9 @@
 # linux-video-wallpaper
 Video Wallpaper for Linux desktops
 
----------------------------------------------------
+-
 This is from a post I made on the Hak5 forums after watching Jason E Street (https://twitter.com/jaysonstreet) on National Geogrpahic's documentary series The Breaktrough and is based on the same video wallpaper he used in his laptop, but for Linux, instead of Windows.
----------------------------------------------------
+-
 To do this, you'll need to install a few things.
 
 Choose your xwinwrap needs(or apt-get install if in your repo)
@@ -23,20 +23,21 @@ Once those two are installed, you'll need to create a profile for your video wal
 
 ## Save this in "/root/.config/mpv/mpv.conf"
 
-# [wallpaper]
-# fullscreen=yes
-# title=mpv-wallpaper
-# geometry=100%x100%
-# border=no
-# no-window-dragging
-# x11-name=mpv-wallpaper
-# hwdec=vaapi
-# aid=no
-# vo=xv
-# loop-file=yes
-# idle=no
-# aid=no
- 
+<code>
+[wallpaper]
+fullscreen=yes
+title=mpv-wallpaper
+geometry=100%x100%
+border=no
+no-window-dragging
+x11-name=mpv-wallpaper
+hwdec=vaapi
+aid=no
+vo=xv
+loop-file=yes
+idle=no
+aid=no
+</code>
 
 Now you can create a shell script to set the wallpaper. You'll need to edit this to point to your video(I suggest not using huge video files)
 
