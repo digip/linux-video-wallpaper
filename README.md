@@ -23,7 +23,7 @@ Once those two are installed, you'll need to create a profile for your video wal
 
 ## Save this in "/root/.config/mpv/mpv.conf"
 
-<code>
+<pre><code>
 [wallpaper]
 fullscreen=yes
 title=mpv-wallpaper
@@ -37,7 +37,7 @@ vo=xv
 loop-file=yes
 idle=no
 aid=no
-</code>
+</code></pre>
 
 Now you can create a shell script to set the wallpaper. You'll need to edit this to point to your video(I suggest not using huge video files)
 
