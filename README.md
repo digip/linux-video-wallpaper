@@ -1,9 +1,10 @@
 # linux-video-wallpaper
 Video Wallpaper for Linux desktops
 
--
+--
 This is from a post I made on the Hak5 forums after watching Jason E Street (https://twitter.com/jaysonstreet) on National Geogrpahic's documentary series The Breaktrough and is based on the same video wallpaper he used in his laptop, but for Linux, instead of Windows.
--
+--
+
 To do this, you'll need to install a few things.
 
 Choose your xwinwrap needs(or apt-get install if in your repo)
@@ -41,14 +42,18 @@ aid=no
 
 Now you can create a shell script to set the wallpaper. You'll need to edit this to point to your video(I suggest not using huge video files)
 
-Save this as something like video-wp.sh
+## Save this as something like video-wp.sh
 
+<pre><code>
 #!/bin/bash
 #set video as wallpaper using xwinwrap and mpv - change path to your video!! Do not use my default settings
 xwinwrap -ni -fs -s -st -sp -b -nf -- mpv --profile wallpaper --wid WID /root/Desktop/MachineFaceDreamsceneLiveWallpaper.mp4 
+</code></pre>
 Then start it like "bash ./video-wp.sh &"
 
-# Important. To keep this going without a terminal open all the time, add the ampersand at the end to send it to the background. When you want to kill it, run:
+--
+
+Important. To keep this going without a terminal open all the time, add the ampersand at the end to send it to the background. When you want to kill it, run:
 
 # killall -9 xwinwrap
 
