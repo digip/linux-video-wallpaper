@@ -1,7 +1,7 @@
 # linux-video-wallpaper
 Video Wallpaper for Linux desktops
 
---
+---------------------------------
 This is from a post I made on the Hak5 forums after watching Jason E Street (https://twitter.com/jaysonstreet) on National Geogrpahic's documentary series The Breaktrough and is based on the same video wallpaper he used in his laptop, but for Linux, instead of Windows.
 --
 
